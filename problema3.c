@@ -34,7 +34,7 @@ int detectar(FILE* entrada)
     char element;
     while(fscanf(entrada, "%c" ,&element)!=EOF)
     {
-        if(element == 14) 
+        if(element == 13) 
         {
             fscanf(entrada, "%c" ,&element);
             if(element==10) 
@@ -70,7 +70,7 @@ void dos2unix(FILE* entrada, FILE* sortida)
     char element;
     while(fscanf(entrada, "%c" ,&element)!=EOF)
     {
-        if(element != 14) fprintf(sortida, "%c", element);
+        if(element != 13) fprintf(sortida, "%c", element);
     }
     
     fclose(entrada);
